@@ -1,0 +1,13 @@
+```{asis, echo = {{poccs_removeSpOutliers_knit}}, eval = {{poccs_removeSpOutliers_knit}}, include = {{poccs_removeSpOutliers_knit}}}
+### Remove Spatial Outliers from Occurrence Data
+Detecting and removing outliers with the  `r "{{outlierMethod_rmd}}"` test
+```
+
+```{r, echo = {{poccs_removeSpOutliers_knit}}, include = {{poccs_removeSpOutliers_knit}}}
+# Remove spatial outliers
+occs_{{spAbr}} <- poccs_removeSpOutliers(
+  occs = occs_{{spAbr}}, 
+  method = "{{outlierMethod_rmd}}",
+  kRosner = {{outlierKRosner_rmd}},
+  pval = {{outlierPval_rmd}})
+```

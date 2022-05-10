@@ -1,0 +1,5 @@
+component: "poccs"
+short_name: "Remove Spatial Outliers"
+long_name: "Remove spatial outliers from species occurrence records"
+authors: "Cameryn Brock, Cory Merow, Patrick R. Roehrdanz"
+package: [occOutliers, outliers, EnvStats]
